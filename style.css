@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    justify-content: center; */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* background: #62baea; */
+}
+
+.item {
+    margin-left: 20px;
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.dropdown:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown.active::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.dropdown input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.dropdown .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown.active .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.dropdown .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+.dropdown .option div ion-icon {
+    position: relative;
+    top: 4px;
+    font-size: 1.2em;
+}
+
+/* 
+=================================================
+Toyota
+=================================================
+*/
+
+.toyota_container {
+    display: none;
+}
+
+.toyota_container.show_toyota {
+    display: block;
+}
+
+
+
+.toyota_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.toyota_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.toyota_list.active2::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.toyota_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.toyota_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.toyota_list.active2 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.toyota_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.toyota_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+.toyota_list .option div ion-icon {
+    position: relative;
+    top: 4px;
+    font-size: 1.2em;
+}
+
+/* 
+=================================================
+NISSAN
+=================================================
+*/
+
+.nissan_container {
+    display: none;
+}
+
+.nissan_container.show_nissan {
+    display: block;
+}
+
+
+
+.nissan_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.nissan_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.nissan_list.active3::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.nissan_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.nissan_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.nissan_list.active3 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.nissan_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.nissan_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+/* 
+=================================================
+OPEL
+=================================================
+*/
+
+.opel_container {
+    display: none;
+}
+
+.opel_container.show_opel {
+    display: block;
+}
+
+
+
+.opel_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.opel_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.opel_list.active4::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.opel_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.opel_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.opel_list.active4 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.opel_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.opel_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+/* 
+=================================================
+FORD
+=================================================
+*/
+
+.ford_container {
+    display: none;
+}
+
+.ford_container.show_ford {
+    display: block;
+}
+
+
+
+.ford_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.ford_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.ford_list.active5::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.ford_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.ford_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.ford_list.active5 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.ford_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.ford_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+/* 
+=================================================
+MAZDA
+=================================================
+*/
+
+.mazda_container {
+    display: none;
+}
+
+.mazda_container.show_mazda {
+    display: block;
+}
+
+
+
+.mazda_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.mazda_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.mazda_list.active6::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.mazda_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.mazda_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.mazda_list.active6 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.mazda_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.mazda_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+/* 
+=================================================
+Isuzu
+=================================================
+*/
+
+.isuzu_container {
+    display: none;
+}
+
+.isuzu_container.show_isuzu {
+    display: block;
+}
+
+
+
+.isuzu_list {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.isuzu_list:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.isuzu_list.active7::before {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: 0.5s;
+}
+
+.isuzu_list input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.isuzu_list .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.isuzu_list.active7 .option {
+    display: block;
+    transition: 0.5s;
+}
+
+.isuzu_list .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.isuzu_list .option div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+
+/* 
+=================================================
+Isuzu END
+=================================================
+*/

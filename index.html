@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dropdown Menu </title>
+</head>
+<body>
+    <div class="container">
+        <!-- Dropdown Menu -->
+        <div class="dropdown item">
+            <input type="text" class="textbox" placeholder="Cylinder Head Brand" readonly>
+            <div class="option">
+                <div class="toyota_head_list">
+                    <div onclick="show('Toyota')">Toyota</div>
+                </div>
+                <div class="nissan_head_list">
+                    <div onclick="show('Nissan')">Nissan</div>
+                </div>
+                <div class="opel_head_list">
+                    <div onclick="show('Opel')">Opel</div>
+                </div>
+                <div class="ford_head_list">
+                    <div onclick="show('Ford')">Ford</div>
+                </div>
+                <div class="mazda_head_list">
+                    <div onclick="show('Mazda')">Mazda</div>
+                </div>
+                <div class="isuzu_head_list">
+                    <div onclick="show('Mazda')">Isuzu</div>
+                </div>
+            </div>
+        </div>
+        <!-- Toyota -->
+        <div class="toyota_container item">
+            <div class="toyota_list">
+                <input type="text" class="toyota_textbox" placeholder="Type of Toyota" readonly>
+                <div class="option">
+                    <div onclick="toyota1('Toyota 1y')">Toyota 1y</div>
+                    <div onclick="toyota1('Toyota 2y')">Toyota 2y</div>
+                    <div onclick="toyota1('Toyota 3y')">Toyota 3y</div>
+                    <div onclick="toyota1('Toyota 4y')">Toyota 4y</div>
+                    <div onclick="toyota1('Toyota 4a')">Toyota 4a</div>
+                    <div onclick="toyota1('Toyota 2t')">Toyota 2t</div>
+                    <div onclick="toyota1('Toyota 3t')">Toyota 3t</div>
+                    <div onclick="toyota1('Toyota 21R')">Toyota 21R</div>
+                    <div onclick="toyota1('Toyota 22R')">Toyota 22R</div>
+                </div>
+            </div>
+        </div>
+        <!-- Nissan -->
+        <div class="nissan_container item">
+            <div class="nissan_list">
+                <input type="text" class="nissan_textbox" placeholder="Type of Nissan" readonly>
+                <div class="option">
+                    <div onclick="nissan1('Nissan Z20')">Nissan Z20</div>
+                    <div onclick="nissan1('Nissan Z24')">Nissan Z24</div>
+                    <div onclick="nissan1('Nissan A12')">Nissan A12</div>
+                    <div onclick="nissan1('Nissan A14')">Nissan A14</div>
+                    <div onclick="nissan1('Nissan E13')">Nissan E13</div>
+                    <div onclick="nissan1('Nissan CA20')">Nissan CA20</div>
+                    <div onclick="nissan1('Nissan NA16')">Nissan NA16</div>
+                    <div onclick="nissan1('Nissan NA20')">Nissan NA20</div>
+                    <div onclick="nissan1('Nissan NA24')">Nissan NA24</div>
+                </div>
+            </div>
+        </div>
+         <!-- OPEL -->
+         <div class="opel_container item">
+            <div class="opel_list">
+                <input type="text" class="opel_textbox" placeholder="Type of Opel" readonly>
+                <div class="option">
+                    <div onclick="opel1('Opel 1.4')">Opel 1.4</div>
+                </div>
+            </div>
+        </div>
+        <!-- FORD -->
+        <div class="ford_container item">
+            <div class="ford_list">
+                <input type="text" class="ford_textbox" placeholder="Type of Ford" readonly>
+                <div class="option">
+                    <div onclick="ford1('Ford CVH 1.3')">Ford CVH 1.3</div>
+                    <div onclick="ford1('Ford 1.4 CVH')">Ford CVH 1.4</div>
+                </div>
+            </div>
+        </div>
+        <!-- MAZDA -->
+        <div class="mazda_container item">
+            <div class="mazda_list">
+                <input type="text" class="mazda_textbox" placeholder="Type of Mazda" readonly>
+                <div class="option">
+                    <div onclick="mazda1('Mazda b3')">Mazda B3</div>
+                    <div onclick="mazda1('Mazda b6')">Mazda B6</div>
+                </div>
+            </div>
+        </div>
+        <!-- Isuzu -->
+        <div class="isuzu_container item">
+            <div class="isuzu_list">
+                <input type="text" class="isuzu_textbox" placeholder="Type of Isuzu" readonly>
+                <div class="option">
+                    <div onclick="isuzu1('Isuzu G161')">Isuzu G161</div>
+                    <div onclick="isuzu1('Isuzu 4ZC1')">Isuzu 4ZC1</div>
+                    <div onclick="isuzu1('Isuzu 4ZD1')">Isuzu 4ZD1</div>
+                </div>
+            </div>
+        </div>
+        
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
